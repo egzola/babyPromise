@@ -6,7 +6,6 @@
 
 // INSTALL:  npm install babypromise
 
-
 // Promise will be executed just when the method run is called
 
 'use strict';
