@@ -1,6 +1,7 @@
 # tinyPromise
 tinyPromise is a sort of light version of Javascript Promises
 
+```
 const tinyPromise = require("./tinyPromise.js");
 
 let myPromise = new tinyPromise(async (p) => { 
@@ -33,3 +34,4 @@ async function init() {
 }
 
 init();
+```
