@@ -4,7 +4,7 @@ tinyPromise is a sort of light version of Javascript Promises
 ```javascript
 
 // ---- Method 1:  autoRun: True -----
-// Promise will be executed as soon as created
+// Promise will be auto-executed as soon as created
 
 const tinyPromise = require("./tinyPromise.js");
 
