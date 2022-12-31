@@ -12,8 +12,8 @@ const tinyPromise = require("./tinyPromise.js");
 let myPromise = new tinyPromise(async (p) => { 
 
   setTimeout(function() {
-     myPromise.resolve('Promise 2 resolved '+p);
-     //myPromise.reject('Promise 2 error: stack overflow');
+     myPromise.resolve('Promise resolved '+p);
+     //myPromise.reject('Promise error: stack overflow');
   }, 2500);
 
 
