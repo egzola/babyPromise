@@ -11,7 +11,6 @@ let myPromise = new tinyPromise(async (p) => {
      //myPromise.reject('Promise error: Stack overflow');
   }, 2000);
 
-
 });
 
 
