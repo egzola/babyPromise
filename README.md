@@ -15,14 +15,14 @@ let myPromise = new tinyPromise(async (p) => {
 });
 
 
-
-Method 1:
+// ---- Method 1 -----
 
 myPromise.then((ret) => console.log(ret));
 myPromise.catch((ret) => console.log("ERRO: "+ret));
 
 
-Method 2:
+
+// ---- Method 2 -----
 
 async function init() {
    myPromise.run("ok, 1234 extra parameters !!!");
@@ -34,4 +34,5 @@ async function init() {
 }
 
 init();
+
 ```
