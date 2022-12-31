@@ -1,7 +1,7 @@
 # tinyPromise
 tinyPromise is a sort of light version of Javascript Promises
 
-```
+```javascript
 const tinyPromise = require("./tinyPromise.js");
 
 let myPromise = new tinyPromise(async (p) => { 
