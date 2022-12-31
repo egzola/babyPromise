@@ -3,7 +3,7 @@ tinyPromise is a sort of light version of Javascript Promises
 
 ```javascript
 
-// ---- Method 1 -----
+// ---- Method 1:  autoRun: True -----
 
 const tinyPromise = require("./tinyPromise.js");
 
@@ -22,7 +22,7 @@ myPromise.catch((ret) => console.log("ERRO: "+ret));
 
 
 
-// ---- Method 2 -----
+// ---- Method 2: autoRun: False  -----
 
 const tinyPromise = require("./tinyPromise.js");
 
@@ -33,7 +33,7 @@ let myPromise = new tinyPromise(async (p) => {
      //myPromise.reject('Promise error: Stack overflow');
   }, 2000);
 
-}, false);  // <=== PAY ATTENTION HERE !!!!
+}, false);  // <=== PAY ATTENTION HERE (autoRun parameter) !!!!
 
 
 async function init() {
