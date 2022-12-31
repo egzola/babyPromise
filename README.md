@@ -4,12 +4,15 @@ babyPromise is a sort of light version of Javascript Promises
 
 Author: Eduardo Zola ( email me at: egzola@gmail.com )
 
+# INSTALL:  npm install babypromise
+
+
 ```javascript
 
 // ----- Method 1 -----
 // Promise will be auto-executed as soon as created
 
-const babyPromise = require("./babyPromise.js");
+const babyPromise = require("babyPromise");
 
 let myPromise = new babyPromise(async (p) => { 
 
@@ -29,7 +32,7 @@ myPromise.catch((ret) => console.log("ERRO: "+ret));
 // ----- Method 2 -----
 // Promise will be executed just when the method run is called
 
-const babyPromise = require("./babyPromise.js");
+const babyPromise = require("babyPromise");
 
 let myPromise = new babyPromise(async (p) => { 
 

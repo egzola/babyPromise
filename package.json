@@ -1,6 +1,6 @@
 {
   "name": "babypromise",
-  "version": "1.3.7",
+  "version": "1.3.8",
   "description": "babyPromise is a sort of light version of Javascript Promises",
   "main": "babyPromise.js",
   "scripts": {
