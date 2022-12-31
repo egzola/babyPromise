@@ -1,6 +1,6 @@
-# tinyPromise
+# babyPromise
 
-tinyPromise is a sort of light version of Javascript Promises
+babyPromise is a sort of light version of Javascript Promises
 
 Author: Eduardo Zola ( email me at: egzola@gmail.com )
 
@@ -9,9 +9,9 @@ Author: Eduardo Zola ( email me at: egzola@gmail.com )
 // ----- Method 1 -----
 // Promise will be auto-executed as soon as created
 
-const tinyPromise = require("./tinyPromise.js");
+const babyPromise = require("./babyPromise.js");
 
-let myPromise = new tinyPromise(async (p) => { 
+let myPromise = new babyPromise(async (p) => { 
 
   setTimeout(function() {
      myPromise.resolve('Promise resolved');
@@ -29,9 +29,9 @@ myPromise.catch((ret) => console.log("ERRO: "+ret));
 // ----- Method 2 -----
 // Promise will be executed just when the method run is called
 
-const tinyPromise = require("./tinyPromise.js");
+const babyPromise = require("./babyPromise.js");
 
-let myPromise = new tinyPromise(async (p) => { 
+let myPromise = new babyPromise(async (p) => { 
 
   setTimeout(function() {
      myPromise.resolve('Promise resolved');
