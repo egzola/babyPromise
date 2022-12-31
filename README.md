@@ -2,6 +2,9 @@
 tinyPromise is a sort of light version of Javascript Promises
 
 ```javascript
+
+// ---- Method 1 -----
+
 const tinyPromise = require("./tinyPromise.js");
 
 let myPromise = new tinyPromise(async (p) => { 
@@ -13,15 +16,25 @@ let myPromise = new tinyPromise(async (p) => {
 
 });
 
-
-// ---- Method 1 -----
-
 myPromise.then((ret) => console.log(ret));
 myPromise.catch((ret) => console.log("ERRO: "+ret));
 
 
 
+
 // ---- Method 2 -----
+
+const tinyPromise = require("./tinyPromise.js");
+
+let myPromise = new tinyPromise(async (p) => { 
+
+  setTimeout(function() {
+     myPromise.resolve('Promise resolved');
+     //myPromise.reject('Promise error: Stack overflow');
+  }, 2000);
+
+}, false);  // <=== PAY ATTENTION HERE !!!!
+
 
 async function init() {
    myPromise.run("ok, 1234 extra parameters !!!");
