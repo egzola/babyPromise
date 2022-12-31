@@ -7,7 +7,6 @@
 // INSTALL:  npm install babypromise
 
 
-
 // Promise will be auto-executed as soon as created
 
 
