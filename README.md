@@ -9,7 +9,7 @@ Author: Eduardo Zola ( email me at: egzola@gmail.com )
 
 ```javascript
 
-// ----- Method 1 -----
+// ----- Example 1 -----
 // Promise will be auto-executed as soon as created
 
 const babyPromise = require("babyPromise");
@@ -29,7 +29,7 @@ myPromise.catch((ret) => console.log("ERRO: "+ret));
 
 
 
-// ----- Method 2 -----
+// ----- Example 2 -----
 // Promise will be executed just when the method run is called
 
 const babyPromise = require("babyPromise");
@@ -54,5 +54,31 @@ async function init() {
 }
 
 init();
+
+
+
+
+
+// ----- Example 3 -----
+// Promise with a chain of Then's
+
+const babyPromise = require("babyPromise");
+
+let myPromise = new babyPromise(async (p) => { 
+
+  setTimeout(function() {
+     myPromise.resolve(5);
+     //myPromise.reject('Promise error: Stack overflow');
+  }, 2000);
+
+
+});
+
+
+myPromise.then((ret) => ret*3);
+myPromise.then((ret) => {console.log(ret);return(ret*10);});
+myPromise.then((ret) => console.log(ret));
+myPromise.catch((ret) => console.log("ERRO: "+ret));
+
 
 ```
