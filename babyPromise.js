@@ -12,14 +12,16 @@ function babyPromise(userInitFunc,autoRun = true) {
    
    this.autoRun = autoRun;
    
-   this.funcThen = function() {};
+   this.funcThen = [];
    
    this.funcCatch = function() {};
    
-   this.resolve = function(p) { 
+   this.resolve = async function(p) { 
       this.ret = p; 
 	  this.status=2; 
-	  this.funcThen(this.ret); 
+	  for(this.i=0;this.i<this.funcThen.length;this.i++) {
+		  this.ret = await this.funcThen[this.i](this.ret); 
+	  }
    }
    
    this.reject = function(p) { 
@@ -29,7 +31,7 @@ function babyPromise(userInitFunc,autoRun = true) {
    }
    
    this.then = async function(p) {
-	  this.funcThen = p;
+	  this.funcThen.push(p);
    }
    
    this.catch = async function(p) {
