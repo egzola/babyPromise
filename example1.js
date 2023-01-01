@@ -28,7 +28,7 @@ let myPromise = new babyPromise(async (p) => {
 
 
 myPromise.then((ret) => console.log(ret));
-myPromise.catch((ret) => console.log("ERRO: "+ret));
+myPromise.catch((ret) => console.log("ERROR: "+ret));
 
 
 
