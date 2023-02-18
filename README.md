@@ -2,7 +2,7 @@
 
 babyPromise is a sort of light version of Javascript Promises
 
-Author: Eduardo Zola ( email me at: egzola@gmail.com )
+Author: Eduardo Zola
 
 # INSTALL:  npm install babypromise
 
