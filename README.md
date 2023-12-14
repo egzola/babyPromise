@@ -1,6 +1,9 @@
 # babyPromise
 
-babyPromise is a sort of light version of Javascript Promises
+What is babyPromise ?
+
+1) It's an easier way to handle with promises
+2) It's a sort of light version of Javascript Native Promises
 
 Author: Eduardo Zola
 
