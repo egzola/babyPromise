@@ -2,7 +2,7 @@
 
 What is babyPromise ?
 
-1) It's an easier way to handle with promises
+1) It's an easier way to deal with promises
 2) It's a sort of light version of Javascript Native Promises
 
 Author: Eduardo Zola
